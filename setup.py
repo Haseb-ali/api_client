@@ -11,7 +11,7 @@ setup(
     description="A simple API client package.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/api-client",
+    url="https://github.com/Haseb-ali/api_client",
     packages=find_packages(),
     install_requires=[
         "requests",
