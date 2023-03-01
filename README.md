@@ -19,23 +19,22 @@ import api_client
 base_url = "https://jsonplaceholder.typicode.com"
 client = api_client.ApiClient(base_url=base_url)
 
-response, status_code, headers = client.get_data("/posts/1")
+response, status_code, headers = client.get("/posts/1")
 
-print(response)
 
 ```
 API Client also supports POST, PUT, and DELETE requests:
 ```python
 # POST request
-data = {"username": "johndoe", "email": "johndoe@example.com"}
-response = client.post("/users", json=data)
+data = {"userId": 1, "id": 101, "title": "test title", "body": "test body"}
+response, status_code, headers = self.client.post(path="/posts", data=data)
+
 
 # PUT request
-data = {"email": "newemail@example.com"}
-response = client.put("/users/1", json=data)
-
+data = {"userId": 1, "id": 1, "title": "test title", "body": "test body"}
+response, status_code, headers = self.client.put(path="/posts/1", data=data)
 # DELETE request
-response = client.delete("/users/1")
+response, status_code, _ = self.client.delete("/posts/1")
 ```
 
 #  Contributing
