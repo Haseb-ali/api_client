@@ -25,14 +25,15 @@ response, status_code, headers = client.get("/posts/1")
 ```
 API Client also supports POST, PUT, and DELETE requests:
 ```python
+
 # POST request
 data = {"userId": 1, "id": 101, "title": "test title", "body": "test body"}
 response, status_code, headers = self.client.post(path="/posts", data=data)
 
-
 # PUT request
 data = {"userId": 1, "id": 1, "title": "test title", "body": "test body"}
 response, status_code, headers = self.client.put(path="/posts/1", data=data)
+
 # DELETE request
 response, status_code, _ = self.client.delete("/posts/1")
 ```
