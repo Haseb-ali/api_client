@@ -39,7 +39,7 @@ response = client.delete("/users/1")
 ```
 
 #  Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/yourusername/api-client. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Haseb-ali/api_client. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
 
 
 # License
