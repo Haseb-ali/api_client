@@ -16,6 +16,8 @@ setup(
     install_requires=[
         "requests",
         "pyyaml",
+        "jwt",
+        "requests_oauthlib"
         # Add any other required packages here
     ],
     classifiers=[

@@ -1,4 +1,4 @@
-from exceptions import HTTPError
+from . import exceptions
 
 
 class Response:
@@ -15,7 +15,7 @@ class Response:
 
     def raise_for_status(self):
         if self.status_code >= 400:
-            raise HTTPError(f"HTTP error {self.status_code}", response=self)
+            raise exceptions.HTTPError(f"HTTP error {self.status_code}", response=self)
 
     def __repr__(self):
         return f"<Response [{self.status_code}]>"
