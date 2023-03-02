@@ -4,8 +4,8 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="haso-api-client",
-    version="0.1.0",
+    name="haso_api_client",
+    version="1.0.0",
     author="Haseeb Ali",
     author_email="haseb.chaudhry@gmail.com",
     description="A simple API client package.",

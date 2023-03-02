@@ -6,7 +6,7 @@ Haso API Client is a Python package for making HTTP requests to web APIs. It pro
 
 Haso API Client can be installed using pip:
 ```
-pip install haso_api_client
+pip install haso-api-client
 ```
 
 ## Usage
