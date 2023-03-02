@@ -1,6 +1,6 @@
-# API Client
+# Haso API Client
 
-API Client is a Python package for making HTTP requests to web APIs. It provides a simple interface for sending GET, POST, PUT, and DELETE requests, handling query parameters and request bodies, and parsing JSON responses. API Client is designed to be easy to use and to integrate with any Python project.
+Haso API Client is a Python package for making HTTP requests to web APIs. It provides a simple interface for sending GET, POST, PUT, and DELETE requests, handling query parameters and request bodies, and parsing JSON responses. API Client is designed to be easy to use and to integrate with any Python project.
 
 ## Installation
 
