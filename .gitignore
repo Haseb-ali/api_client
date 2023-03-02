@@ -20,3 +20,4 @@ tests/
 *.swp
 .DS_Store
 myenv/
+env

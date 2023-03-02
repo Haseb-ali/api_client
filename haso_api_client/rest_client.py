@@ -12,10 +12,10 @@ class APIClient:
         self.base_url = base_url
         self.auth = auth
 
-    def get(self, path=None):
+    async def get(self, path=None):
         url = self.base_url + path
         headers = self._get_headers()
-        response = request_client.Request(
+        response =await  request_client.Request(
             "GET", url, headers=headers, auth=self.auth
         ).send()
         return response.json(), response.status_code, response.headers
