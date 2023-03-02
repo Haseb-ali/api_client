@@ -4,20 +4,21 @@ Haso API Client is a Python package for making HTTP requests to web APIs. It pro
 
 ## Installation
 
-API Client can be installed using pip:
+Haso API Client can be installed using pip:
 ```
-pip install api-client
+pip install haso_api_client
 ```
 
 ## Usage
 
-Here's an example of how to use API Client to make a GET request:
+Here's an example of how to use Haso API Client to make a GET request:
 
 ```python
-import api_client
+import haso_api_client
 
 base_url = "https://jsonplaceholder.typicode.com"
-client = api_client.ApiClient(base_url=base_url)
+
+client=haso_api_client.APIClient(base_url=base_url)
 
 response, status_code, headers = client.get("/posts/1")
 
@@ -28,14 +29,14 @@ API Client also supports POST, PUT, and DELETE requests:
 
 # POST request
 data = {"userId": 1, "id": 101, "title": "test title", "body": "test body"}
-response, status_code, headers = self.client.post(path="/posts", data=data)
+response, status_code, headers = client.post(path="/posts", data=data)
 
 # PUT request
 data = {"userId": 1, "id": 1, "title": "test title", "body": "test body"}
-response, status_code, headers = self.client.put(path="/posts/1", data=data)
+response, status_code, headers = client.put(path="/posts/1", data=data)
 
 # DELETE request
-response, status_code, _ = self.client.delete("/posts/1")
+response, status_code, _ = client.delete("/posts/1")
 ```
 
 #  Contributing

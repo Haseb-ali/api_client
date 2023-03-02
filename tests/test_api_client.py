@@ -1,5 +1,8 @@
 import unittest
-from api_client import APIClient
+
+from haso_api_client.rest_client import APIClient
+
+
 
 
 class TestAPIClient(unittest.TestCase):
